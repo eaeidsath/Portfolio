@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(172, 82, 57);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(121, 27, 27);
+    padding: 2%;
+}
+
+nav {
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+nav a {
+    background-color: beige;
+    color: #382842;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+figure {
+    background-color: #382842;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+figure p {
+    max-width: 300px;
+    font-size: 200%;
+    color: #fff;
+}
