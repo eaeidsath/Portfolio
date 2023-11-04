@@ -12,8 +12,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
-    background-color: rgb(121, 27, 27);
+    color: #fef2dd;
+    background-color: #791b1b;
     padding: 2%;
 }
 
@@ -23,7 +23,7 @@ nav {
 }
 
 nav a {
-    background-color: beige;
+    background-color: #fef2dd;
     color: #382842;
     padding: 10px;
     margin: 10px;
@@ -32,16 +32,78 @@ nav a {
 
 figure {
     background-color: #382842;
-    width: 100%;
+    min-width: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
     padding: 0 5%;
 }
 
 figure p {
     max-width: 300px;
     font-size: 200%;
-    color: #fff;
+    color: #fef2dd;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 4%;
+}
+
+h2,
+h3,
+h5 {
+    font-size: 150%;
+    height: 100px;
+    width: 100px;
+    margin: 20px 10px 0 0;
+    background-color: #791b1b;
+    border-radius: 50%;
+    text-align: center;
+}
+
+section {
+    background-color: #fef2dd;
+    margin: 20px 0;
+}
+
+.works section {
+    margin-right: 5px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.works {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#snippet {
+    width: 300px
+    height 100px;
+}
+
+.contacts {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer {
+    text-align: center;
 }
