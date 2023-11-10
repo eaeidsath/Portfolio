@@ -4,6 +4,7 @@
     --light: #fef2dd;
     --contrast: #791b1b;
     --borderdark: #3b0d0d;
+    --glow: #d4a1f5;
     --borderradius: 10px;
 }
 
@@ -168,14 +169,14 @@ h4 {
 }
 
 section img {
-    border: 3px solid #382842;
+    border: 3px solid var(--dark);
     object-fit: fit;
 }
 
 /*Glow effect on hover*/
 .grid section img:hover,
 .works section img:hover {
-    box-shadow: inset 0px 0px 8px #d4a1f5, 0px 0px 15px #d4a1f5;
+    box-shadow: inset 0px 0px 8px var(--glow), 0px 0px 15px var(--glow);
 }
 
 /*Contact section*/
