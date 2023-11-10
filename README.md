@@ -25,7 +25,7 @@ N/A
 
 ## Usage
 
-To view this webpage, enter the URL []() into any browser and scroll to see the webpage content.
+To view this webpage, enter the URL [https://eaeidsath.github.io/Portfolio/](https://eaeidsath.github.io/Portfolio/) into any browser and scroll to see the webpage content.
 
 For quick navigation, users can click the links in the header at the top of the page named About, Works, and Contact to instantly be brought to the corresponding topic's section on the webpage.
 
