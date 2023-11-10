@@ -212,6 +212,10 @@ footer {
 
 /*Media resizing for phones and tablets*/
 @media screen and (max-width: 992px) {
+    header {
+        justify-content: center;
+    }
+
     figure {
         justify-content: center;
     }
