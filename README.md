@@ -10,6 +10,15 @@ By making this portfolio, I became familiar with the processs of creating a webs
 
 ## Screenshots
 
+### Desktop
+![Website screenshot 1 on desktop](./assets/images/desktop1.png)
+![Website screenshot 2 on desktop](./assets/images/desktop2.png)
+![website screenshot 3 on desktop](./assets/images/desktop3.jpg)
+
+### Mobile
+![Website screenshot 1 on mobile](./assets/images/mobile1.png)
+![Website screenshot 2 on mobile](./assets/images/mobile2.png)
+
 ## Installation
 
 N/A
