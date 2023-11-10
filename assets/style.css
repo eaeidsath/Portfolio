@@ -1,8 +1,10 @@
+/*Defines variables*/
 :root {
     --dark: #382842;
     --light: #fef2dd;
     --contrast: #791b1b;
     --borderdark: #3b0d0d;
+    --borderradius: 10px;
 }
 
 * {
@@ -14,6 +16,7 @@ body {
     background-color: #ac5239;
 }
 
+/*Header title and background*/
 h1 {
     font-size: 70px;
     letter-spacing: 3px;
@@ -30,6 +33,7 @@ header {
     border: 5px solid var(--borderdark);
 }
 
+/*Navigation bar and links*/
 nav {
     font-size: 150%;
     font-weight: bolder;
@@ -43,9 +47,10 @@ nav a {
     padding: 15px;
     margin: 10px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: var(--borderradius);
 }
 
+/*Potrait and self-summary*/
 figure {
     background-color: var(--dark);
     min-width: 100vh;
@@ -53,7 +58,7 @@ figure {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
+    border-radius: var(--borderradius);
     padding: 0 5%;
 }
 
@@ -64,24 +69,10 @@ figure p {
     color: var(--light);
 }
 
+/*Beginning of website sections styling*/
 main {
     display: flex;
     flex-direction: column;
-}
-
-#About {
-    padding: 30px;
-}
-
-#About section {
-    background-color: var(--light);
-    border-left: 3px solid var(--contrast);
-    border-right: 3px solid var(--contrast);
-}
-
-#About section p {
-    padding: 10px 40px;
-    font-size: 22px;
 }
 
 article {
@@ -91,6 +82,11 @@ article {
     margin: 0 4%;
 }
 
+section {
+    margin: 20px 0;
+}
+
+/*Side headers for each section*/
 h2,
 h3,
 h5 {
@@ -105,27 +101,26 @@ h5 {
     text-align: center;
 }
 
-section {
-    margin: 20px 0;
-}
-
-#Work {
+/*About section*/
+#About {
     padding: 30px;
 }
 
-.works section img {
-    width: 700px;
-    height: 500px;
+#About section {
+    background-color: var(--light);
+    border-left: 3px solid var(--contrast);
+    border-right: 3px solid var(--contrast);
+    border-radius: var(--borderradius);
 }
 
-section img {
-    border: 3px solid #382842;
-    object-fit: fit;
+#About section p {
+    padding: 10px 40px;
+    font-size: 22px;
 }
 
-.grid section img:hover,
-.works section img:hover {
-    box-shadow: inset 0px 0px 8px #d4a1f5, 0px 0px 15px #d4a1f5;
+/*Works section*/
+#Work {
+    padding: 30px;
 }
 
 .grid {
@@ -134,6 +129,7 @@ section img {
     align-items: center;
     width: 100%;
     background-color: #894e50;
+    border-radius: var(--borderradius);
 }
 
 .works {
@@ -147,6 +143,7 @@ section img {
     width: 700px;
 }
 
+/*Project titles*/
 #snippet h4 {
     margin-left: 400px;
 }
@@ -161,9 +158,27 @@ h4 {
     font-size: 20px;
     background-color: var(--light);
     border: var(--dark);
-    border-radius: 10px;
+    border-radius: var(--borderradius);
 }
 
+/*Image styling*/
+.works section img {
+    width: 700px;
+    height: 500px;
+}
+
+section img {
+    border: 3px solid #382842;
+    object-fit: fit;
+}
+
+/*Glow effect on hover*/
+.grid section img:hover,
+.works section img:hover {
+    box-shadow: inset 0px 0px 8px #d4a1f5, 0px 0px 15px #d4a1f5;
+}
+
+/*Contact section*/
 #Contact {
     background-color: var(--contrast);
     border: 5px solid var(--borderdark);
@@ -182,9 +197,10 @@ h4 {
     background-color: var(--light);
     padding: 20px;
     font-size: 25px;
-    border-radius: 10px;
+    border-radius: var(--borderradius);
 }
 
+/*Footer and credits*/
 h6 {
     font-size: 20px;
     margin-bottom: -10px;
@@ -194,10 +210,14 @@ footer {
     text-align: center;
 }
 
+/*Media resizing for phones and tablets*/
 @media screen and (max-width: 992px) {
     figure {
-      min-width: none;
-      justify-content: flex-start;
+        justify-content: center;
+    }
+
+    figure p {
+        text-align: center;
     }
 
     #snippet h4 {
@@ -209,40 +229,8 @@ footer {
     #snippet img {
         width: 700px;
     }
-  }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-    figure {
-      min-width: none;
-      justify-content: flex-start;
-    }
 
-    #snippet h4 {
-        position: relative;
-        margin-bottom: -20px;
-        margin-left: 250px;
-    }
-
-    #snippet img {
-        width: 700px;
-    }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    figure {
-      min-width: none;
-      justify-content: flex-start;
-    }
-
-    #snippet h4 {
-        position: relative;
-        margin-bottom: -20px;
-        margin-left: 250px;
-    }
-
-    #snippet img {
-        width: 700px;
+    #About section p {
+        font-size: 18px;
     }
   }
